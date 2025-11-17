@@ -1,3 +1,6 @@
+# olxprojectdemo
+>>>>>>> 674c2101c4d4b27a066677ad54349db1aca6ee3c
+=======
 # RealtyHub - Premium Real Estate Marketplace
 
 A modern real estate platform built with React, TypeScript, and Tailwind CSS. Find your perfect property from our collection of houses, apartments, villas, and land for sale or rent.
@@ -18,7 +21,7 @@ A modern real estate platform built with React, TypeScript, and Tailwind CSS. Fi
 - **Styling**: Tailwind CSS, shadcn/ui
 - **Backend**: Node.js, Express, MongoDB
 - **Authentication**: JWT
-- **Deployment**: GitHub Pages
+- **Deployment**: Netlify (Frontend), Render (Backend)
 
 ## Getting Started
 
@@ -32,8 +35,8 @@ A modern real estate platform built with React, TypeScript, and Tailwind CSS. Fi
 
 1. Clone the repository
 ```bash
-git clone <YOUR_GIT_URL>
-cd <YOUR_PROJECT_NAME>
+git clone https://github.com/vijay071128/olxprojectdemo.git
+cd olxprojectdemo
 ```
 
 2. Install dependencies
@@ -58,15 +61,18 @@ The application will be available at `http://localhost:8080`
 ## Project Structure
 
 ```
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/         # Page components
-│   ├── contexts/      # React contexts
-│   ├── hooks/         # Custom hooks
-│   ├── lib/           # Utility functions
-│   └── data/          # Static data and types
-├── backend/           # Express.js backend
-└── public/            # Static assets
+├── frontend/
+│   ├── src/
+│   │   ├── components/     # Reusable UI components
+│   │   ├── pages/         # Page components
+│   │   ├── contexts/      # React contexts
+│   │   ├── hooks/         # Custom hooks
+│   │   ├── lib/           # Utility functions
+│   │   └── data/          # Static data and types
+│   ├── public/            # Static assets
+│   └── package.json
+├── backend/               # Express.js backend
+└── README.md
 ```
 
 ## Available Scripts
@@ -75,6 +81,22 @@ The application will be available at `http://localhost:8080`
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
+
+## Deployment
+
+### Frontend (Netlify)
+1. Connect your GitHub repository to Netlify
+2. Set build command: `npm run build`
+3. Set publish directory: `frontend/dist`
+4. Deploy
+
+### Backend (Render)
+1. Connect your GitHub repository to Render
+2. Select the backend directory
+3. Set build command: `npm install`
+4. Set start command: `npm start`
+5. Add environment variables (MONGODB_URI, JWT_SECRET, PORT)
+6. Deploy
 
 ## Contributing
 
@@ -87,3 +109,6 @@ The application will be available at `http://localhost:8080`
 ## License
 
 This project is licensed under the MIT License.
+=======
+# olxprojectdemo
+>>>>>>> 674c2101c4d4b27a066677ad54349db1aca6ee3c
